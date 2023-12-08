@@ -17,12 +17,12 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">No.</th>
+                                <th scope="col">Nomor</th>
                                 <th scope="col">Judul</th>
                                 <th scope="col">Isi</th>
                                 <th scope="col">Kategori</th>
                                 <th scope="col">Penulis</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,16 +36,16 @@
                                     <td>
                                         <div class="d-flex">
                                             <a href="{{-- route('berita.show',$item->id) --}}" class="btn btn-warning btn-sm"><i
-                                                    class="bi bi-eye"></i>Preview</a>
+                                                    class=""></i>Preview</a>
                                             <a href="{{ route('berita.edit', $item->id) }}"
                                                 class="btn btn-success btn-sm ms-1"><i
-                                                    class="bi bi-pencil-square"></i>Edit</a>
+                                                    class=""></i>Edit</a>
                                             <form onsubmit="return confirm('sure to delete this data')"
                                                 action="{{ route('berita.delete', $item->id) }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button class="btn btn-sm btn-danger mb-0 ms-1">
-                                                    <i class="bi bi-trash"></i>delete</button>
+                                                    <i class=""></i>delete</button>
                                             </form>
                                         </div>
                                     </td>
